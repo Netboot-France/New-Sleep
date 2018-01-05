@@ -15,7 +15,12 @@ You can use it for many tasks, such as waiting for an operation to complete or p
   - **Date**	     : 2017-05-10
   - **Last Update**: 2017-07-26
   - **Version**	   : 1.0.1
-    
+
+## INSTALL
+```
+PS> Install-Script -Name New-Sleep
+```
+
 ## EXAMPLE
 ```
 New-Sleep -S 60 -Message "wait and see"

@@ -1,40 +1,45 @@
 <#PSScriptInfo
-	.VERSION 1.0.1
-	.GUID 5a193180-8425-41de-955d-8f0e298c2cbc
-	.AUTHOR thomas.illiet
-	.COMPANYNAME netboot.fr
-	.COPYRIGHT (c) 2017 Netboot. All rights reserved.
-	.TAGS Tools
-	.LICENSEURI https://raw.githubusercontent.com/Netboot-France/New-Sleep/master/LICENSE
-	.PROJECTURI https://github.com/Netboot-France/New-Sleep
+    .VERSION 1.0.2
+    .GUID 5a193180-8425-41de-955d-8f0e298c2cbc
+    .AUTHOR thomas.illiet
+    .COMPANYNAME netboot.fr
+    .COPYRIGHT (c) 2017 Netboot. All rights reserved.
+    .TAGS Tools
+    .LICENSEURI https://raw.githubusercontent.com/Netboot-France/New-Sleep/master/LICENSE
+    .PROJECTURI https://github.com/Netboot-France/New-Sleep
+    .ICONURI https://raw.githubusercontent.com/Netboot-France/New-Sleep/master/Resource/Icon.png
+    .EXTERNALMODULEDEPENDENCIES
+    .REQUIREDSCRIPTS 
+    .EXTERNALSCRIPTDEPENDENCIES 
+    .RELEASENOTES
 #>
 
 <#  
-	.SYNOPSIS  
-		Suspends the activity in a script or session for the specified period of time.
+    .SYNOPSIS  
+        Suspends the activity in a script or session for the specified period of time.
 
-	.DESCRIPTION
-		The New-Sleep cmdlet suspends the activity in a script or session for the specified period of time.
-		You can use it for many tasks, such as waiting for an operation to complete or pausing before repeating an operation.
+    .DESCRIPTION
+        The New-Sleep cmdlet suspends the activity in a script or session for the specified period of time.
+        You can use it for many tasks, such as waiting for an operation to complete or pausing before repeating an operation.
 
-	.NOTES  
-		File Name  : New-Sleep.ps1
-		Author     : Thomas ILLIET, contact@thomas-illiet.fr
-		Date	   : 2017-05-10
-		Last Update: 2017-07-26
-		Version	   : 1.0.1
-		
-	.PARAMETER S
-		Time to wait
-	
-	.PARAMETER Message
-		Message you want to display
+    .NOTES  
+        File Name   : New-Sleep.ps1
+        Author      : Thomas ILLIET, contact@thomas-illiet.fr
+        Date        : 2017-05-10
+        Last Update : 2018-01-08
+        Version     : 1.0.2
 
-	.EXAMPLE  
-		New-Sleep -S 60 -Message "wait and see"
+    .PARAMETER S
+        Time to wait
 
-	.EXAMPLE
-		New-Sleep -S 60
+    .PARAMETER Message
+        Message you want to display
+
+    .EXAMPLE  
+        New-Sleep -S 60 -Message "wait and see"
+
+    .EXAMPLE
+        New-Sleep -S 60
 #>
 [cmdletbinding()]
 param
